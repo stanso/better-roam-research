@@ -2,6 +2,9 @@
   --main-font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Arial", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --code-font-family: "mononoki", "Ubuntu Mono", "Source Code Pro", monospace;
   --font-size: 15.5px;
+  --h1-font-color: hsl(157, 100%, 25%);
+  --h2-font-color: hsl(157, 55%, 40%);
+  --h3-font-color: hsl(157, 52%, 56%);
   --font-color: hsl(205, 23%, 16%);
   --font-color-lighter: hsl(0, 0%, 40%);
   --font-color-placeholder: hsl(0, 0%, 70%);
@@ -164,7 +167,15 @@ body,
 }
 
 h1 {
-  color: var(--font-color) !important;
+  color: var(--h1-font-color) !important;
+}
+
+h2 {
+  color: var(--h2-font-color) !important;
+}
+
+h3 {
+  color: var(--h3-font-color) !important;
 }
 
 div.roam-article span > a:not(.rm-alias-page):after {
@@ -461,6 +472,9 @@ span.checkmark {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --h1-font-color: hsl(125, 100%, 37%);
+    --h2-font-color: hsl(125, 56%, 41%);
+    --h3-font-color: hsl(125, 48%, 36%);
     --font-color: hsl(205, 0%, 98%);
     --font-color-lighter: hsl(0, 0%, 50%);
     --font-color-placeholder: hsl(0, 0%, 36%);
