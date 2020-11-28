@@ -482,21 +482,48 @@ span.checkmark {
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --fg-color: #00ff00;
+    --bg-color: #000000;
+    /* black */
+    --black0: #000000;
+    --black1: #666666;
+    /* red */
+    --red0: #990000;
+    --red1: #e50000;
+    /* green */
+    --green0: #00a600;
+    --green1: #00d900;
+    /* yellow */
+    --yellow0: #999900;
+    --yellow1: #e5e500;
+    /* blue */
+    --blue0: #0000b2;
+    --blue1: #0000ff;
+    /* magenta */
+    --magenta0: #b200b2;
+    --magenta1: #e500e5;
+    /* cyan */
+    --cyan0: #00a6b2;
+    --cyan1: #00e5e5;
+    /* white */
+    --white0: #bfbfbf;
+    --white1: #e5e5e5;
+
     --h1-font-color: hsl(125, 100%, 37%);
     --h2-font-color: hsl(125, 56%, 41%);
     --h3-font-color: hsl(125, 48%, 36%);
-    --font-color: #00ff00;
-    --font-color-lighter: hsl(0, 0%, 50%);
-    --font-color-placeholder: hsl(0, 0%, 36%);
-    --link-color: hsl(203, 62%, 55%);
-    --selection-color: hsl(203, 56%, 36%);
+    --font-color: var(--fg-color);
+    --font-color-lighter: var(--green1);
+    --font-color-placeholder: var(--green0);
+    --link-color: var(--blue1);
+    --selection-color: var(--blue0);
     --reference-item-background: hsl(0, 0%, 8%);
     --ref-hover-bg-color: hsl(204, 20%, 17%);
     --border-color: rgba(255, 255, 255, 0.25);
     --subtle-border-color: rgba(255, 255, 255, 0.07);
     --search-border-color: rgba(255, 255, 255, 0.06);
     --page-background-color: hsl(0, 0%, 8%);
-    --main-area-background-color: #000000;
+    --main-area-background-color: var(--bg-color);
     --cards-background-color: hsl(0, 0%, 20%);
     --secondary-background-color: hsl(0, 0%, 15%);
     --popup-background-color: hsl(0, 0%, 4%);
