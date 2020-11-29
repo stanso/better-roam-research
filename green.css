@@ -509,13 +509,13 @@ span.checkmark {
     --white0: #bfbfbf;
     --white1: #e5e5e5;
 
-    --h1-font-color: hsl(125, 100%, 37%);
-    --h2-font-color: hsl(125, 56%, 41%);
-    --h3-font-color: hsl(125, 48%, 36%);
+    --h1-font-color: var(--red1);
+    --h2-font-color: var(--magenta0);
+    --h3-font-color: var(--cyan0);
     --font-color: var(--fg-color);
     --font-color-lighter: var(--green1);
     --font-color-placeholder: var(--green0);
-    --link-color: var(--blue1);
+    --link-color: var(--cyan1);
     --selection-color: var(--blue0);
     --reference-item-background: hsl(0, 0%, 8%);
     --ref-hover-bg-color: hsl(204, 20%, 17%);
